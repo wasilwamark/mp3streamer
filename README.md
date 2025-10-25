@@ -1,4 +1,3 @@
-```bash
 # mp3stream
 
 A lightweight MP3 streaming server that decodes MP3 files and broadcasts raw PCM audio over TCP to multiple clients.
@@ -166,4 +165,3 @@ Make sure port 5016 is open in your firewall if streaming across networks.
 ## License
 
 See source code for license information.
-```
