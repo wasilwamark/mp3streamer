@@ -20,9 +20,10 @@ A lightweight MP3 streaming server that decodes MP3 files and broadcasts raw PCM
 - **pthread** - Multi-threading support
 - **gcc** or compatible C compiler
 
-### Optional (for Ruby client)
+### Optional (for clients)
 
-- **Ruby** - For the included Ruby client
+- **Ruby** - For the Ruby client
+- **Python 3** - For the Python client
 - **pulseaudio-utils** (paplay) - For audio playback
 
 ## Installation
@@ -129,7 +130,13 @@ nc localhost 5016 | aplay -f cd -t raw
 ./pcm_client.rb
 ```
 
-The Ruby client expects 48 kHz, 16-bit stereo PCM audio.
+#### Using the Python Client
+
+```bash
+./pcm_client.py
+```
+
+Both clients expect 48 kHz, 16-bit stereo PCM audio.
 
 #### Using netcat only (testing)
 
